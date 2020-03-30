@@ -9,11 +9,11 @@ Modify the base_url value in the core file according to the folder where you pla
 
 ### Functions :
 
-1. form_valid(name_of_input, type, status)
+### 1. form_valid(name_of_input, type, status)
 
 example : 
 
-for <input type="email" name="email" required />  ---> $data = form_valid('email', 'email' ,1)
+for (input type="email" name="email" required)  ---> $data = form_valid('email', 'email' ,1)
 
 (1 for required and 0 for not).
 
