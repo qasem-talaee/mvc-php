@@ -34,3 +34,29 @@ $data = image_upload('file' ,'view/uploads/', 500000)
 $data[0] = (0 for Not accepted and 1 for accepted)
 
 $data[1] = name of file
+
+#### 3.image_upload_thumbnail(form_name_input, location, size_limit, thumb_location, thumb_size)
+
+image upload and create thumbnail of it
+
+example:
+
+$data = image_upload_thumbnail('file' , 'view/uploads/' , 500000 , 'view/uploads/thumbs/' , 0.2)
+
+$data[0] = (0 for Not accepted and 1 for accepted)
+
+$data[1] = name of main file
+
+$data[2] = name of thumbnail file
+
+#### 4.pagination(connection_name ,table_name, per_page, number_of_page)
+
+example:
+
+$data = pagination($con , 'library' , 7 , 2)
+
+$data[0] = start in qurey for each page
+
+$data[1] = number of all pages
+
+#### 5.send_email(to, subject, message ,from, reply_to)
