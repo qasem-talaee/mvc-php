@@ -1,7 +1,18 @@
 # mvc-php
+
 A simple mvc PHP with friendly url and some functions.
 
 Copy the project to the root of your site and test it.
+
+## Modules :
+
+1.Friendly url
+
+2.Caching system
+
+3.Easy image uploader with create thumbnail of it
+
+4.A few other useful functions
 
 ### Important :
 
