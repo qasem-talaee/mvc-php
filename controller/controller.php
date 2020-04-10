@@ -1,6 +1,6 @@
 <?php
 #---- Get Url ----#
-$url = $_SERVER['REQUEST_URI'];
+$url = test_input($_SERVER['REQUEST_URI']);
 $url = str_replace($base_url, '', $url);
 
 #---- Get data from url ----#
