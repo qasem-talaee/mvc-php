@@ -1,11 +1,12 @@
 <?php
 include('core/send_email.php');
 if(isset($_POST['submit'])){
-    $to = 'qasem.talaee1375@gmail.com';
+    $to = 'Email Address';
     $subject = 'no subject';
+    //you can send HTML message
     $message = 'hello';
     $from = $reply_to = 'example@gmail.com';
-    send_email($to, $subject, $message, $from, $reply_to);
+    send_email($to, 'john', $subject, $message, $from, 'qasem', $reply_to, 'qasem');
 }
 
 include('view/other_pages/email.php');
